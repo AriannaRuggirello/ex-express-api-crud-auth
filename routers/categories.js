@@ -4,7 +4,7 @@ const categoriesController=require('../controllers/categories');
 
 
 router.get('/', categoriesController.index);
-router.post('/', checkSchema(),categoriesController.store);
+router.post('/',categoriesController.store);
 
 
 

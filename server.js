@@ -5,7 +5,7 @@ const port=3000;
 const postsRouter = require("./routers/posts");
 const categoriesRouter = require("./routers/categories");
 const tagsRouter = require("./routers/tags");
-
+const authRouter = require('./routers/auth')
 
 
 app.use(express.json());
@@ -15,7 +15,7 @@ app.use(express.json());
 app.use("/posts", postsRouter);
 app.use("/categories", categoriesRouter);
 app.use("/tags", tagsRouter);
-
+app.use('/',authRouter);
 
 
 
